@@ -19,32 +19,40 @@
 * **JSON**
 
 ## 🛠️ การตั้งค่าและการติดตั้ง
-1.  ### **โคลน Repository:**
-    เปิด Terminal หรือ Command Prompt แล้วใช้คำสั่ง:
-    ```bash
-    git clone https://github.com/pnwboon/discord-rps-bot.git
-    ```
-2.  ### **ติดตั้งแพ็กเกจที่จำเป็น:**
-    ```bash
-    npm install
-    ```
-3. ### **สร้าง Application บอท:**
+### 1. **โคลน Repository:**
+   เปิด Terminal หรือ Command Prompt แล้วใช้คำสั่ง:
+   ```bash
+   git clone https://github.com/pnwboon/discord-rps-bot.git
+   ```
+### 2. **ติดตั้งแพ็กเกจที่จำเป็น:**
+   ```bash
+   npm install
+   ```
+### 3. **สร้าง Application บอท:**
    ไปที่ [Discord Developer Portal](https://discord.com/developers/applications)
     
-4. ### **Bot Permissions:**
-    **`Send Messages`**, **`Use Slash Commands`**, **`View Channels`**
+### 4. **Bot Permissions:**
+   **`Send Messages`**, **`Use Slash Commands`**, **`View Channels`**
 
-6. ### **สร้างไฟล์ `.env`:**
-    ```bash
-    DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
-    ```
-    **แทนที่ `YOUR_BOT_TOKEN_HERE` ด้วย Token ที่คุณคัดลอกจาก Discord Developer Portal**
+### 5. **สร้างไฟล์ข้อมูล `data.json`:**
+   ```json
+    {
+        "gameResults": [],
+        "playerStats": {}
+    }
+   ```
 
-6. ### **ลงทะเบียน Slash Commands:**
-    ```bash
-    node deploy-commands.js
-    ```
-7. ### **รันบอท**
-    ```bash
-    node index.js
-    ```
+### 6. **สร้างไฟล์ `.env`:**
+   ```
+   DISCORD_TOKEN=YOUR_BOT_TOKEN_HERE
+   ```
+   **แทนที่ `YOUR_BOT_TOKEN_HERE` ด้วย Token ที่คุณคัดลอกจาก Discord Developer Portal**
+
+### 7. **ลงทะเบียน Slash Commands:**
+   ```bash
+   node deploy-commands.js
+   ```
+### 8. **รันบอท**
+   ```bash
+   node index.js
+   ```
